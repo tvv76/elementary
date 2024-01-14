@@ -37,6 +37,7 @@ class PointTest {
         double out = Point.distance(x1, y1, x2, y2);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
     @Test
     void when55to71then4dot47() {
         double expected = 4.47;
