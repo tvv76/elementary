@@ -1,18 +1,13 @@
 package ru.loop;
 
 public class Counter {
-    public static int sum(int start, int finish) {
+
+    public static int sumByEven(int start, int finish) {
         int rsl = 0;
         for (int i = start; i <= finish; i++) {
-            rsl += i;
+            rsl += i % 2 == 0 ? i : 0;
         }
         return rsl;
     }
 
-    public static void main(String[] args) {
-        System.out.println(sum(0, 10));
-        System.out.println(sum(3, 8));
-        System.out.println(sum(1, 1));
-        System.out.println(sum(0, 5));
-    }
 }
