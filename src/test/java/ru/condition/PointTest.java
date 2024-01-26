@@ -40,4 +40,13 @@ class PointTest {
         double out = a.distance(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
+
+    @Test
+    void when552to718then4dot47() {
+        double expected = 5.39;
+        Point a = new Point (5, 5, 5);
+        Point b = new Point (7, 1, 8);
+        double out = a.distance3d(b);
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
+    }
 }
